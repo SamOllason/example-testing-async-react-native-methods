@@ -1,0 +1,35 @@
+{
+  "name": "exampleAsyncMethodTesting",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
+    "fetch-mock": "^7.3.3",
+    "jest": "^24.8.0",
+    "jest-environment-enzyme": "^7.0.2",
+    "jest-enzyme": "^7.0.2",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": ["jest-enzyme"],
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    }
+  }
+}
